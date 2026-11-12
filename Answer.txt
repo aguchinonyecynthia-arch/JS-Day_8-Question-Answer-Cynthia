@@ -1,0 +1,322 @@
+1. What is the result of "true || false"?
+a) true
+b) false
+c) null
+d) undefined
+
+ANSWER: A
+
+2. What is the result of "!(true && false)"?
+a) false
+b) true
+c) null
+d) undefined
+
+ANSWER: B
+
+3. What is the value of result?
+let x = 7;
+let result = (x % 2 === 0) ? "even" : "odd";
+a) "even"
+b) 7
+c) "odd"
+d) 1
+
+ANSWER: C
+
+4. What is the value of x?
+let x = 10 + 5 * 2;
+a) 30
+b) 15
+c) 25
+d) 20
+
+ANSWER: D
+
+5. Which expression returns true?
+a) "5" === 5
+b) "5" == 5
+c) 5 !== 5
+d) None of the above
+
+ANSWER: B
+
+6. What is the value of x?
+let x = 10;
+x -= 4;
+a) 14
+b) 6
+c) 4
+d) 10
+
+ANSWER: B
+
+7. What is the value of y?
+let x = 5;
+let y = ++x;
+a) 5
+b) 4
+c) 6
+d) undefined
+
+ANSWER: C
+
+8. What is the value of x?
+let x = 3;
+x *= 2 + 1;
+a) 7
+b) 3
+c) 6
+d) 9
+
+ANSWER: D
+
+9. What is the value of 17 % 5?
+a) 2
+b) 3
+c) 3.4
+d) 5
+
+ANSWER: A
+
+10. What does typeof (5 > 3) return?
+a) "number"
+b) "boolean"
+c) "string"
+d) "true"
+
+ANSWER: B
+
+11. What is the result of null == undefined?
+a) null
+b) false
+c) true
+d) Error
+
+ANSWER: C
+
+12. What is logged to the console?
+let hour = 14;
+if (hour >= 6 && hour < 12) {
+  console.log('Good morning');
+} else if (hour >= 12 && hour < 18) {
+  console.log('Good afternoon');
+} else {
+  console.log('Good evening');
+}
+a) Good morning
+b) Nothing
+c) Good evening
+d) Good afternoon
+
+ANSWER: D
+
+13. Using the same code as question 12, what is logged if hour = 18?
+a) Good evening
+b) Good afternoon
+c) Good morning
+d) Nothing
+
+ANSWER: A
+
+14. What is logged to the console?
+let role = 'admin';
+switch (role) {
+  case 'guest':
+    console.log('Guest User');
+    break;
+  case 'moderator':
+    console.log('Moderator User');
+    break;
+  default:
+    console.log('Unknown User');
+}
+a) Guest User
+b) Unknown User
+c) Moderator User
+d) Nothing
+
+ANSWER: B
+
+15. What is logged if break is removed from the 'guest' case?
+let role = 'guest';
+switch (role) {
+  case 'guest':
+    console.log('Guest User');
+  case 'moderator':
+    console.log('Moderator User');
+    break;
+}
+a) Guest User
+b) Moderator User
+c) Guest User, then Moderator User
+d) Nothing
+
+ANSWER: C
+
+16. In a switch statement, which block runs when no case matches?
+a) else
+b) finally
+c) break
+d) default
+
+ANSWER: D
+
+17. How many times is 'Hi' logged?
+for (let i = 0; i < 5; i++) {
+  console.log('Hi');
+}
+a) 5
+b) 4
+c) 6
+d) Infinite
+
+ANSWER: A
+
+18. What is the value of sum?
+let sum = 0;
+for (let i = 1; i <= 4; i++) {
+  sum += i;
+}
+a) 4
+b) 10
+c) 6
+d) 15
+
+ANSWER: B
+
+19. What numbers are logged?
+for (let i = 0; i < 5; i++) {
+  if (i % 2 !== 0) console.log(i);
+}
+a) 0, 2, 4
+b) 1, 3, 5
+c) 1, 3
+d) 0, 1, 2, 3, 4
+
+ANSWER: C 
+
+20. What is the value of i after the loop?
+let i = 0;
+while (i < 3) {
+  i++;
+}
+a) 2
+b) 0
+c) 4
+d) 3
+
+ANSWER: D
+
+21. How many times does console.log run?
+let i = 9;
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+a) 1
+b) 0
+c) 5
+d) Infinite
+
+ANSWER: A
+
+22. Which loop always executes at least once?
+a) for
+b) do...while
+c) while
+d) for...of
+
+ANSWER: B
+
+23. Why is this an infinite loop?
+let i = 0;
+while (i <= 5) {
+  console.log(i);
+}
+a) The condition is wrong
+b) while can't use <=
+c) i is never incremented
+d) console.log stops loops
+
+ANSWER: C
+
+24. What does this loop log?
+const person = { name: 'Napoleon', age: 30 };
+for (let key in person)
+  console.log(key);
+a) Napoleon, 30
+b) undefined
+c) 0, 1
+d) name, age
+
+ANSWER: D
+
+25. Using the same object, how do you log each value inside the for...in loop?
+a) person[key]
+b) person.key
+c) key.person
+d) person(key)
+
+ANSWER: A
+
+26. What does this loop log?
+const colors = ['red', 'green', 'blue'];
+for (let index in colors)
+  console.log(index);
+a) red, green, blue
+b) 0, 1, 2
+c) 1, 2, 3
+d) undefined
+
+ANSWER: B
+
+27. What does this loop log?
+const colors = ['red', 'green', 'blue'];
+for (let color of colors)
+  console.log(color);
+a) 0, 1, 2
+b) colors
+c) red, green, blue
+d) undefined
+
+ANSWER: C
+
+28. What is the last number logged?
+let a = 0;
+while (a < 10) {
+  if (a === 5) break;
+  console.log(a);
+  a++;
+}
+a) 10
+b) 5
+c) 9
+d) 4
+
+ANSWER: D
+
+29. What numbers are logged?
+for (let i = 0; i < 5; i++) {
+  if (i === 2) continue;
+  console.log(i);
+}
+a) 0, 1, 3, 4
+b) 0, 1
+c) 0, 1, 2, 3, 4
+d) 3, 4
+
+ANSWER: A
+
+30. What is the value of count?
+const nums = [3, 8, 5, 10];
+let count = 0;
+for (let n of nums) {
+  if (n > 4) count++;
+}
+a) 2
+b) 3
+c) 4
+d) 1
+
+ANSWER: B
